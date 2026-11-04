@@ -12,4 +12,9 @@ const development = {
 const production = {
   use_env_variable: "POSTGRES_URL",
   dialect: "postgres",
+  dialectOptions: {
+    ssl: {
+      rejectUnauthorized: false
+    }
+  }
 };
